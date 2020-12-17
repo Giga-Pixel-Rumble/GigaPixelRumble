@@ -1,0 +1,11 @@
+﻿{
+  "solution": {
+    "path": "GigaPixelRumble.sln",
+    "projects": [
+      "GigaPixelRumble.Desktop\\GigaPixelRumble.Desktop.csproj",
+      "GigaPixelRumble.Game\\GigaPixelRumble.Game.csproj",
+      "GigaPixelRumble.Game.Tests\\GigaPixelRumble.Game.Tests.csproj",
+      "GigaPixelRumble.Resources\\GigaPixelRumble.Resources.csproj"
+    ]
+  }
+}
