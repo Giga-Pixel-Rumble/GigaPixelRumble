@@ -4,6 +4,8 @@ using osu.Framework.Graphics.Containers;
 using osu.Framework.IO.Stores;
 using osuTK;
 using GigaPixelRumble.Resources;
+using osu.Framework.Graphics.Textures;
+using osuTK.Graphics.ES30;
 
 namespace GigaPixelRumble.Game
 {
@@ -14,6 +16,10 @@ namespace GigaPixelRumble.Game
         // the screen scaling for all components including the test browser and framework overlays.
 
         protected override Container<Drawable> Content { get; }
+
+        private TextureStore textures;
+
+        private DependencyContainer dependencies;
 
         protected GigaPixelRumbleGameBase()
         {
@@ -29,6 +35,14 @@ namespace GigaPixelRumble.Game
         private void load()
         {
             Resources.AddStore(new DllResourceStore(typeof(GigaPixelRumbleResources).Assembly));
+
+            AddFont(Resources, @"Fonts/vt323");
+
+            textures = new TextureStore(Textures, filteringMode: All.Nearest);
+            dependencies.Cache(textures);
         }
+
+        protected override IReadOnlyDependencyContainer CreateChildDependencies(IReadOnlyDependencyContainer parent)
+            => dependencies = new DependencyContainer(base.CreateChildDependencies(parent));
     }
 }
