@@ -1,6 +1,7 @@
 ﻿using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Sprites;
+using osu.Framework.Input.Events;
 using osu.Framework.Screens;
 using osuTK;
 
@@ -34,6 +35,23 @@ namespace GigaPixelRumble.Game.Screens
         protected override void LoadComplete()
         {
             base.LoadComplete();
+        }
+
+        protected override bool OnClick(ClickEvent e)
+        {
+            StartGame();
+            return true;
+        }
+
+        protected override bool OnTouchDown(TouchDownEvent e)
+        {
+            StartGame();
+            return true;
+        }
+
+        private void StartGame()
+        {
+
         }
     }
 }
