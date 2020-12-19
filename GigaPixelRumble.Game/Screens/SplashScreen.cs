@@ -1,4 +1,5 @@
-﻿using osu.Framework.Allocation;
+﻿using GigaPixelRumble.Game.Screens.Common;
+using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Input.Events;
@@ -15,12 +16,11 @@ namespace GigaPixelRumble.Game.Screens
         {
             InternalChildren = new Drawable[]
             {
-                new SpriteText
+                new GigaPixelLogo
                 {
                     Origin = Anchor.Centre,
                     RelativeAnchorPosition = new Vector2(0.5f, 0.32f),
-                    Text = "Giga Pixel Rumble",
-                    Font = FontUsage.Default.With(size: 200)
+                    Scale = new Vector2(2)
                 },
                 new SpriteText
                 {
