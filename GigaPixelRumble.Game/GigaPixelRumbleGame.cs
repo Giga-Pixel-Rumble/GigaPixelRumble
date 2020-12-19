@@ -1,4 +1,5 @@
-﻿using osu.Framework.Allocation;
+﻿using GigaPixelRumble.Game.Screens;
+using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Screens;
 
@@ -20,7 +21,7 @@ namespace GigaPixelRumble.Game
         {
             base.LoadComplete();
 
-            screenStack.Push(new MainScreen());
+            screenStack.Push(new SplashScreen());
         }
     }
 }
