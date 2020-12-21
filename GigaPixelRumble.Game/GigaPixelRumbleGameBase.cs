@@ -36,7 +36,7 @@ namespace GigaPixelRumble.Game
         {
             Resources.AddStore(new DllResourceStore(typeof(GigaPixelRumbleResources).Assembly));
 
-            AddFont(Resources, @"Fonts/vt323");
+            AddFont(Resources, @"Fonts/PressStartP2");
 
             textures = new TextureStore(Textures, filteringMode: All.Nearest);
             dependencies.Cache(textures);

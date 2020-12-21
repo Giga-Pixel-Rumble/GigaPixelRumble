@@ -24,10 +24,10 @@ namespace GigaPixelRumble.Game.Screens
                 },
                 new SpriteText
                 {
-                    RelativeAnchorPosition = new Vector2(0.5f, 0.67f),
+                    RelativeAnchorPosition = new Vector2(0.5f, 0.75f),
                     Origin = Anchor.Centre,
                     Text = "Tap to Start",
-                    Font = FontUsage.Default.With(size: 120)
+                    Font = FontUsage.Default.With(size: 100)
                 }
             };
         }
