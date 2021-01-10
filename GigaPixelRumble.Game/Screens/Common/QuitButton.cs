@@ -16,8 +16,12 @@ namespace GigaPixelRumble.Game.Screens.Common
 
         public readonly float SIZE = 50f;
 
-        public QuitButton()
+        public QuitButton(osu.Framework.Game game)
         {
+            Action = () =>
+            {
+                game.Exit();
+            };
             Padding = new MarginPadding(PADDING);
             AutoSizeAxes = Axes.Both;
             Child = new Container

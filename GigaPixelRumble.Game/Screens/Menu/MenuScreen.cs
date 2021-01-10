@@ -57,13 +57,10 @@ namespace GigaPixelRumble.Game.Screens.Menu
                         }
                     }
                 },
-                new QuitButton
+                new QuitButton(Game)
                 {
                     Origin = Anchor.BottomLeft,
-                    Anchor = Anchor.BottomLeft,
-                    Action = () => {
-                        Game.Exit();
-                    }
+                    Anchor = Anchor.BottomLeft
                 }
             };
         }
