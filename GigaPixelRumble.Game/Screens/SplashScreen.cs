@@ -1,4 +1,5 @@
 ﻿using GigaPixelRumble.Game.Screens.Common;
+using GigaPixelRumble.Game.Screens.Menu;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Sprites;
@@ -51,7 +52,7 @@ namespace GigaPixelRumble.Game.Screens
 
         private void StartGame()
         {
-
+            this.Push(new MenuScreen());
         }
     }
 }

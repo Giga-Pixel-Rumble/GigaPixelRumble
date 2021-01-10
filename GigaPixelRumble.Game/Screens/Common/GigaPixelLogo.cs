@@ -14,6 +14,7 @@ namespace GigaPixelRumble.Game.Screens.Common
         private void load()
         {
             // This is just a placeholder until we get a proper logo to use
+            AutoSizeAxes = Axes.Both;
             InternalChildren = new Drawable[]
             {
                 new SpriteText
