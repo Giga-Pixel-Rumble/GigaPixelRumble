@@ -22,14 +22,14 @@ namespace GigaPixelRumble.Game.Screens.Common
                     Origin = Anchor.BottomCentre,
                     Anchor = Anchor.Centre,
                     Text = "Giga Pixel",
-                    Font = FontUsage.Default.With(size: 60)
+                    Font = new FontUsage(family: "PressStartP2", size: 60)
                 },
                 new SpriteText
                 {
                     Origin = Anchor.TopCentre,
                     Anchor = Anchor.Centre,
                     Text = "Rumble",
-                    Font = FontUsage.Default.With(size: 90)
+                    Font = new FontUsage(family: "PressStartP2", size: 90)
                 }
             };
         }
